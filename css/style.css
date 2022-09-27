@@ -87,6 +87,7 @@ img {
     padding-right: 50px;
 }
 
+
 .header-button {
     text-align: center;
     width: 100%;
@@ -102,7 +103,6 @@ img {
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/background-image.jpg);
-
 }
 
 .company-link:hover .icon-company,
@@ -436,6 +436,7 @@ img {
 
 .button-banner {
     height: 50px;
+
 }
 
 .button-active {
@@ -773,8 +774,29 @@ img {
     letter-spacing: 0.03em;
     display: block;
     margin: 0 4px;
+    /*text-decoration: underline;*/
     color: var(--blue);
     cursor: pointer;
+}
+
+.label-terms::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    transition: transform 0.5s;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+
+
+}
+
+.input:checked+.label-terms::before {
+    border: none;
+    background-image: url(../images/Vector.svg);
 }
 
 .terms-link:hover,
@@ -792,6 +814,7 @@ img {
     height: 16px;
     border: 1px solid var(--dark);
     border-radius: 2px;
+
 }
 
 .form-button {
